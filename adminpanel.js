@@ -4,7 +4,7 @@ const makingPayment = async() =>{
 await usersFromBase?.map(async(el,ind)=>{
 if(selectedUser.value === el.id){
 const   date1 = await el.due ;
-setDateQuest(date1)
+
 await getData();
 await sortingFirst();
 await findingIndex(date1);
